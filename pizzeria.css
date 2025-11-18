@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #222;
+    color: white;
+  }
+  
+  .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Checkbox elrejtése */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Hamburger ikon alapból rejtve desktopon */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* ===== Mobil nézet ===== */
+  @media (max-width: 768px) {
+  
+    /* Desktop menü eltűnik mobilon */
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #333;
+      padding: 0;
+    }
+  
+    .menu a {
+      padding: 15px;
+      border-bottom: 1px solid #444;
+      margin: 0;
+      display: block;
+    }
+  
+    /* Hamburger ikon mobilon látszik */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Ha a checkbox be van pipálva → jelenjen meg a menü */
+    #menu-toggle:checked + .hamburger + .menu {
+      display: flex;
+    }
+  }
