@@ -1,4 +1,4 @@
-/* BASIC */
+
 
 body {
     margin: 0;
@@ -93,7 +93,7 @@ body {
     padding: 50px 15%;
 }
 
-.specials-grid {
+.kepek {
     margin-top: 40px;
     display: grid;
     grid-template-columns: 2fr 1fr;
