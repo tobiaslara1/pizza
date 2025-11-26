@@ -7,22 +7,25 @@ body {
 
 .header {
     width: 92vw;
-    padding: 20px 40px; /* nagyobb belső margó a képen */
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: start;
 
-    background: transparent;  /* ne legyen sötét csík */
-    z-index: 10;            /* mindig a kép fölött legyen */
+    background: transparent;
+    z-index: 10;
     background-image: url(/img/pizzakep.jpg);
     background-size: cover;
     height: 50vh;
 }
 
 
-.header-left {
+.logo {
     font-size: 22px;
     font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .nav {
@@ -110,37 +113,77 @@ body {
 
 /* BOTTOM INFO */
 
-.info {
+/* ————————————————————————
+   ALSÓ INFO RÉSZ (PIXELPONTOS)
+   ———————————————————————— */
+
+   .info {
+    width: 98vw;
+    background: #000;                   /* a képen teljesen fekete */
+    padding: 70px 0;
     display: flex;
     justify-content: center;
-    gap: 80px;
-    padding: 50px 5%;
-    background: #222;
+    align-items: flex-start;
+    gap: 50px;                         /* nagy hézag, mint a képen */
 }
 
 .info-column {
-    max-width: 300px;
+    width: 230px;                       /* fix szélesség — pont olyan, mint a képen */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.szeretettel{
+    width: 150px;                       /* fix szélesség — pont olyan, mint a képen */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 .info-title {
-    margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;                /* nagy távolság a cím alatt */
+    letter-spacing: 1px;
+
 }
 
-.link {
+.info-column p {
+    margin: 10px 0;
+    font-size: 15px;
+    opacity: 0.75;                      /* halvány, mint a képen */
+}
+
+.info-column a {
     color: #fff;
     text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-/* FOOTER */
+.vonal{
+    border-bottom: 1px solid #888;         /* vékony felső vonal */
+}
+/* ————————————————————————
+   LÁBLÉC / FOOTER (PIXELPONTOS)
+   ———————————————————————— */
+
+.footervonal{
+    width: 50vw;
+    border-top: 1px solid #888;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .footer {
+    width: 98vw;
     text-align: center;
-    padding: 20px;
-    background: #111;
+    background: #000;
+    padding: 45px 0;
     font-size: 14px;
-    opacity: .7;
+    font-family: Arial, sans-serif;
 }
+
 
 /* RESPONSIVE */
 

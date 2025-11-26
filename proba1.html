@@ -10,8 +10,9 @@
 
 <!-- HEADER -->
 <header class="header">
+    <section id="kezdo"></section>
 
-    <div class="header-left">PIZZÉRIA</div>
+    <div class="logo">PIZZÉRIA</div>
 
     <!-- HAMBURGER -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -22,10 +23,10 @@
     </label>
 
     <nav class="nav">
-        <a href="#">Kezdőlap</a>
-        <a href="#">Menü</a>
-        <a href="#">Rólunk</a>
-        <a href="#">Kapcsolat</a>
+        <a href="#kezdo">Kezdőlap</a>
+        <a href="#menu">Menü</a>
+        <a href="#rolunk">Rólunk</a>
+        <a href="#kapcs">Kapcsolat</a>
     </nav>
 </header>
 
@@ -50,6 +51,7 @@
 </section>
 
 <!-- MENÜ -->
+<section id="menu"></section>
 <section class="menu-section">
     <h2 class="title">— MENÜ —</h2>
     <p class="subtitle">Ajánlatunk</p>
@@ -62,13 +64,14 @@
     </p>
 
     <div class="menu-buttons">
-        <a class="btn" href="#">PIZZA</a>
-        <a class="btn" href="#">MENÜ</a>
+        <a class="btn" href="#kezdo">PIZZA</a>
+        <a class="btn" href="#menu">MENÜ</a>
         <a class="btn" href="#">ITALOK</a>
     </div>
 </section>
 
 <!-- SPECIALITÁSOK (GRID) -->
+<section id="rolunk"></section>
 <section class="specials">
     <h2 class="title">— SPECIALITÁSAINK —</h2>
     <p class="subtitle">Az ízek tökéletes összehangja</p>
@@ -87,20 +90,27 @@
 </section>
 
 <!-- BOTTOM INFO -->
+<section id="kapcs"></section>
 <section class="info">
-    <div class="info-column">
+    <div class="szeretettel">
         <h3 class="info-title">SZERETETTEL VÁRUNK</h3>
     </div>
 
     <div class="info-column">
         <h3 class="info-title">NYITVA</h3>
-        <p>Hétfő: Zárva</p>
-        <p>Kedd: 09:30 - 20:00</p>
-        <p>Szerda: 09:30 - 20:00</p>
-        <p>Csütörtök: 11:00 - 22:00</p>
-        <p>Péntek: 11:00 - 22:00</p>
-        <p>Szombat: 11:00 - 22:00</p>
-        <p>Vasárnap: 11:00 - 20:00</p>
+        <p>Hétfő: <br> Zárva</p>
+        <div class="vonal"></div>
+        <p>Kedd: <br> 09:30 - 20:00</p>
+        <div class="vonal"></div>
+        <p>Szerda: <br> 09:30 - 20:00</p>
+        <div class="vonal"></div>
+        <p>Csütörtök: <br> 11:00 - 22:00</p>
+        <div class="vonal"></div>
+        <p>Péntek: <br> 11:00 - 22:00</p>
+        <div class="vonal"></div>
+        <p>Szo: <br> 11:00 - 22:00</p>
+        <div class="vonal"></div>
+        <p>Vas: <br> 11:00 - 20:00</p>
     </div>
 
     <div class="info-column">
@@ -112,8 +122,10 @@
 </section>
 
 <!-- FOOTER -->
+<div class="footervonal"></div>
 <footer class="footer">
     Piadina Pizzéria, 1013 Budapest, Clark Ádám tér 1. • +36-67-632-456<br>
+    <br>
     Az oldal a WeMake műhelyéből
 </footer>
 
