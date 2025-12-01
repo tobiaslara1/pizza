@@ -71,6 +71,8 @@ body {
     text-align: center;
 }
 
+
+
 .title { font-size: 26px; }
 .subtitle { opacity: .7; margin-bottom: 20px; }
 .text { line-height: 1.7; }
@@ -93,23 +95,60 @@ body {
 /* SPECIALS GRID - JAVÍTVA */
 
 .specials {
-    background: #111;
+    background: #222;
+    padding: 80px 10%;
     text-align: center;
-    padding: 50px 15%;
 }
 
-.kepek {
-    margin-top: 40px;
+/* — FELSŐ RÉSZ — */
+.special-top {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 4fr 2fr; /* nagy kép bal, magas kép jobb */
+    gap: 35px;
 }
 
-.kepek div img {
+/* — ALSÓ RÉSZ — */
+.special-bottom {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 egyforma kis kép */
+    grid-template-rows:  repeat(2fr, 2fr, 1fr); ;
+    gap: 35px;
+}
+
+/* — KÉPEK — */
+.item img {
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
     border-radius: 6px;
 }
+
+/* magasságok pixelpontosan */
+.big-left {
+    height: 330px;
+}
+
+.tall-right {
+    height: 390px;
+}
+
+.small {
+    height: 190px;
+}
+
+.legkissebb{
+    height: 140px;
+}
+
+/* képfelirat */
+.img-title {
+    margin-top: 6px;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
 
 /* BOTTOM INFO */
 
@@ -184,6 +223,45 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.piadina {
+    background: #222;
+    padding: 80px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.piadina-left {
+    width: 35%;
+    text-align: left;
+}
+
+.piadina-right {
+    width: 55%;
+    text-align: left;
+}
+
+.piadina .title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.piadina .subtitle {
+    font-size: 16px;
+    opacity: .7;
+    margin-bottom: 20px;
+}
+
+.piadina .text {
+    line-height: 1.7;
+}
+
+.phone {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 
 /* RESPONSIVE */
 
@@ -230,5 +308,16 @@ body {
 
     .menu-toggle:checked ~ .nav {
         display: flex;
+    }
+
+    .piadina {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .piadina-left,
+    .piadina-right {
+        width: 100%;
+        text-align: center;
     }
 }
