@@ -30,16 +30,21 @@ body {
 
 .nav {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav a {
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
+.slash {
+    color: #ccc;
+    opacity: 0.7;
+}
 /* HAMBURGER */
 
 .menu-toggle { display: none; }
@@ -66,7 +71,7 @@ body {
 
 .piadina, 
 .menu-section {
-    background: #222;
+    background: #000;
     padding: 50px 20%;
     text-align: center;
 }
@@ -83,6 +88,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    color: ;
 }
 
 .btn {
@@ -94,29 +100,39 @@ body {
 
 /* SPECIALS GRID - JAVÍTVA */
 
-.specials {
+/* ————————————————
+   DESKTOP (eredeti pixelszerint)
+   ————————————————*/
+   .specials {
     background: #222;
-    padding: 80px 10%;
+    padding: 70px 12%;
     text-align: center;
 }
 
-/* — FELSŐ RÉSZ — */
-.special-top {
+.special-grid {
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: 4fr 2fr; /* nagy kép bal, magas kép jobb */
-    gap: 35px;
+    grid-template-columns: 2fr 1fr;  /* bal nagy + jobb magas */
+    gap: 40px;
 }
 
-/* — ALSÓ RÉSZ — */
-.special-bottom {
-    margin-top: 35px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 egyforma kis kép */
-    grid-template-rows:  repeat(2fr, 2fr, 1fr); ;
-    gap: 35px;
+/* nagy vízszintes bal kép */
+.big-left {
+    height: 360px;
 }
 
-/* — KÉPEK — */
+/* jobb oldali magas */
+.tall-right {
+    height: 530px;
+    grid-row: span 2;
+}
+
+/* alsó 3 kis kép */
+.small {
+    height: 200px;
+}
+
+/* képek */
 .item img {
     width: 100%;
     height: 100%;
@@ -124,30 +140,14 @@ body {
     border-radius: 6px;
 }
 
-/* magasságok pixelpontosan */
-.big-left {
-    height: 330px;
-}
-
-.tall-right {
-    height: 390px;
-}
-
-.small {
-    height: 190px;
-}
-
-.legkissebb{
-    height: 140px;
-}
-
-/* képfelirat */
 .img-title {
-    margin-top: 6px;
     font-style: italic;
-    font-size: 14px;
+    margin-top: 6px;
     opacity: 0.9;
 }
+
+
+
 
 
 /* BOTTOM INFO */
@@ -227,34 +227,36 @@ body {
     background: #222;
     padding: 80px 12%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    gap: 60px;
+    gap: 80px;
 }
 
 .piadina-left {
-    width: 35%;
+    width: 30%;        /* kisebb blokk – mint a képen */
     text-align: left;
 }
 
 .piadina-right {
-    width: 55%;
+    width: 50%;        /* nagyobb blokk jobb oldalon */
     text-align: left;
 }
 
 .piadina .title {
-    font-size: 28px;
+    font-size: 30px;
+    letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
 .piadina .subtitle {
-    font-size: 16px;
-    opacity: .7;
+    opacity: 0.7;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
 .piadina .text {
     line-height: 1.7;
+    opacity: 0.9;
 }
 
 .phone {
@@ -273,26 +275,28 @@ body {
     }
 
     .specials {
-        padding: 50px 10%;
+        padding: 50px 6%;
     }
 
-    /* MOBIL GRID JAVÍTVA */
-    .kepek {
-        grid-template-columns: 1fr;
+    .special-grid {
+        grid-template-columns: 2fr 1fr; /* megtartjuk az eredeti arányokat */
+        gap: 25px;
     }
 
-    .info {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
+    .big-left {
+        height: 260px;   /* kisebb */
+    }
+
+    .tall-right {
+        height: 380px;   /* kisebb */
+    }
+
+    .small {
+        height: 150px;   /* kisebb */
     }
 }
 
 @media (max-width: 600px) {
-
-    .hamburger{
-        
-    }
 
     .nav {
         position: absolute;
@@ -319,5 +323,20 @@ body {
     .piadina-right {
         width: 100%;
         text-align: center;
+    }
+
+    .special-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .big-left,
+    .tall-right,
+    .small {
+        height: 220px;
+    }
+
+    .tall-right {
+        grid-row: auto; /* ne lógjon át több soron */
     }
 }
