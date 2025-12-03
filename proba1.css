@@ -45,7 +45,11 @@ body {
     color: #ccc;
     opacity: 0.7;
 }
-/* HAMBURGER */
+/* HAMBURGER  
+    .hero-img {
+    width: 100%;
+    display: block;
+} */
 
 .menu-toggle { display: none; }
 
@@ -62,11 +66,40 @@ body {
     background: white;
 }
 
-/* HERO */
+.piadina {
+    background: #222;
+    padding: 80px 12%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
 
-.hero-img {
-    width: 100%;
-    display: block;
+.piadina-bal {
+    width: 30%;        /* kisebb blokk – mint a képen */
+    text-align: right;
+}
+
+.piadina-right {
+    width: 50%;        /* nagyobb blokk jobb oldalon */
+    text-align: left;
+}
+
+.piadina .title {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.piadina .subtitle {
+    opacity: 0.7;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.piadina .text {
+    line-height: 1.7;
+    opacity: 0.9;
 }
 
 .piadina, 
@@ -75,8 +108,6 @@ body {
     padding: 50px 20%;
     text-align: center;
 }
-
-
 
 .title { font-size: 26px; }
 .subtitle { opacity: .7; margin-bottom: 20px; }
@@ -88,7 +119,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    color: ;
 }
 
 .btn {
@@ -98,11 +128,6 @@ body {
     color: #fff;
 }
 
-/* SPECIALS GRID - JAVÍTVA */
-
-/* ————————————————
-   DESKTOP (eredeti pixelszerint)
-   ————————————————*/
    .specials {
     background: #222;
     padding: 70px 12%;
@@ -146,17 +171,7 @@ body {
     opacity: 0.9;
 }
 
-
-
-
-
-/* BOTTOM INFO */
-
-/* ————————————————————————
-   ALSÓ INFO RÉSZ (PIXELPONTOS)
-   ———————————————————————— */
-
-   .info {
+.info {
     width: 98vw;
     background: #000;                   /* a képen teljesen fekete */
     padding: 70px 0;
@@ -178,7 +193,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.info-title {
+.szeretettel {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;                /* nagy távolság a cím alatt */
+    letter-spacing: 1px;
+
+}
+
+.probal{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 40px;                /* nagy távolság a cím alatt */
@@ -201,62 +225,6 @@ body {
 
 .vonal{
     border-bottom: 1px solid #888;         /* vékony felső vonal */
-}
-/* ————————————————————————
-   LÁBLÉC / FOOTER (PIXELPONTOS)
-   ———————————————————————— */
-
-.footervonal{
-    width: 50vw;
-    border-top: 1px solid #888;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    width: 98vw;
-    text-align: center;
-    background: #000;
-    padding: 45px 0;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-}
-
-.piadina {
-    background: #222;
-    padding: 80px 12%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 80px;
-}
-
-.piadina-left {
-    width: 30%;        /* kisebb blokk – mint a képen */
-    text-align: left;
-}
-
-.piadina-right {
-    width: 50%;        /* nagyobb blokk jobb oldalon */
-    text-align: left;
-}
-
-.piadina .title {
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-}
-
-.piadina .subtitle {
-    opacity: 0.7;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.piadina .text {
-    line-height: 1.7;
-    opacity: 0.9;
 }
 
 .phone {
@@ -339,4 +307,26 @@ body {
     .tall-right {
         grid-row: auto; /* ne lógjon át több soron */
     }
+}
+
+.footervonal{
+    width: 50vw;
+    border-top: 1px solid #888;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    color: #888;
+    width: 98vw;
+    text-align: center;
+    background: #000;
+    padding: 45px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    color: #888;
 }
