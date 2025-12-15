@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    width: 92vw;
+    width: 93.8vw;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,6 @@ body {
     font-size: 22px;
     font-weight: bold;
     display: flex;
-    justify-content: start;
-    align-items: start;
 }
 
 .nav {
@@ -128,47 +126,96 @@ body {
     color: #fff;
 }
 
-   .specials {
-    background: #222;
-    padding: 70px 12%;
+.specials {
+    max-width: 1200px;
+    margin: 80px auto;
     text-align: center;
 }
 
+/* ===== TITLE ===== */
+
+.specials .title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.specials .subtitle {
+    font-size: 16px;
+    color: #b5b5b5;
+    margin-bottom: 50px;
+}
+
+/* ===== GRID ===== */
+
 .special-grid {
-    margin-top: 40px;
     display: grid;
-    grid-template-columns: 2fr 1fr;  /* bal nagy + jobb magas */
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* sok kisebb sor */
+    grid-template-rows:
+        220px
+        220px
+        40px
+        220px
+        1px;
+
+    gap: 50px;
 }
 
-/* nagy vízszintes bal kép */
-.big-left {
-    height: 360px;
+.elsopizza {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 
-/* jobb oldali magas */
-.tall-right {
-    height: 530px;
-    grid-row: span 2;
+.vorosbors {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4; 
 }
 
-/* alsó 3 kis kép */
-.small {
-    height: 200px;
+.vegyes {
+    grid-column: 1 / 2;
+    grid-row: 3  / 5;
 }
 
-/* képek */
-.item img {
+.pizza {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.eloetetl {
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+}
+
+.special-grid > div {
+    position: relative;
+    overflow: hidden;
+}
+
+.special-grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
+    object-fit: cover; /* EZ FONTOS */
 }
 
 .img-title {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
     font-style: italic;
-    margin-top: 6px;
-    opacity: 0.9;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    white-space: nowrap;
+}
+
+.special-grid div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
 }
 
 .info {
