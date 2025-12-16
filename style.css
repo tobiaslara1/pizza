@@ -55,24 +55,24 @@ body {
     text-align: right;
 }
 
-.piadina-right {
+.piadina-jobb {
     width: 50%;       
     text-align: left;
 }
 
-.piadina .title {
+.piadina .piadinacim{
     font-size: 30px;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
-.piadina .subtitle {
+.piadina .tortenetunk {
     opacity: 0.7;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.piadina .text {
+.piadina .piadinaszoveg {
     line-height: 1.7;
     opacity: 0.9;
 }
@@ -84,19 +84,19 @@ body {
     text-align: center;
 }
 
-.title { 
+.cim { 
     font-size: 26px; 
 }
 
-.subtitle { 
+.cimalatt { 
     opacity: .7; margin-bottom: 20px; 
 }
 
-.text { 
+.piadinaszoveg { 
     line-height: 1.7; 
 }
 
-.phone { 
+.telefon { 
     font-weight: bold; margin-top: 20px; 
 }
 
