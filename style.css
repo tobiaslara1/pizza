@@ -6,16 +6,13 @@ body {
 }
 
 .header {
-    width: 93.8vw;
+    width: 95vw;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-    align-items: start;
-
     background: transparent;
     z-index: 10;
     background-image: url(/img/pizzakep.jpg);
-    background-size: cover;
     height: 50vh;
 }
 
@@ -23,13 +20,7 @@ body {
 .logo {
     font-size: 22px;
     font-weight: bold;
-    display: flex;
-}
 
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .nav a {
@@ -41,7 +32,6 @@ body {
 
 .slash {
     color: #ccc;
-    opacity: 0.7;
 }
 /* HAMBURGER  
     .hero-img {
@@ -50,19 +40,6 @@ body {
 } */
 
 .menu-toggle { display: none; }
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-}
 
 .piadina {
     background: #222;
@@ -74,12 +51,12 @@ body {
 }
 
 .piadina-bal {
-    width: 30%;        /* kisebb blokk – mint a képen */
+    width: 30%;     
     text-align: right;
 }
 
 .piadina-right {
-    width: 50%;        /* nagyobb blokk jobb oldalon */
+    width: 50%;       
     text-align: left;
 }
 
@@ -107,10 +84,21 @@ body {
     text-align: center;
 }
 
-.title { font-size: 26px; }
-.subtitle { opacity: .7; margin-bottom: 20px; }
-.text { line-height: 1.7; }
-.phone { font-weight: bold; margin-top: 20px; }
+.title { 
+    font-size: 26px; 
+}
+
+.subtitle { 
+    opacity: .7; margin-bottom: 20px; 
+}
+
+.text { 
+    line-height: 1.7; 
+}
+
+.phone { 
+    font-weight: bold; margin-top: 20px; 
+}
 
 .menu-buttons {
     margin-top: 30px;
@@ -132,7 +120,6 @@ body {
     text-align: center;
 }
 
-/* ===== TITLE ===== */
 
 .specials .title {
     font-size: 28px;
@@ -146,13 +133,11 @@ body {
     margin-bottom: 50px;
 }
 
-/* ===== GRID ===== */
 
 .special-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    /* sok kisebb sor */
     grid-template-rows:
         220px
         220px
@@ -196,7 +181,7 @@ body {
 .special-grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* EZ FONTOS */
+    object-fit: cover;
 }
 
 .img-title {
@@ -212,7 +197,7 @@ body {
 }
 
 .special-grid div::after {
-    content: "";
+
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.15);
@@ -220,22 +205,22 @@ body {
 
 .info {
     width: 98vw;
-    background: #000;                   /* a képen teljesen fekete */
+    background: #000;                  
     padding: 70px 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;                         /* nagy hézag, mint a képen */
+    gap: 50px;                     
 }
 
 .info-column {
-    width: 230px;                       /* fix szélesség — pont olyan, mint a képen */
+    width: 230px;                    
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
 .szeretettel{
-    width: 150px;                       /* fix szélesség — pont olyan, mint a képen */
+    width: 150px;                  
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
@@ -244,7 +229,7 @@ body {
     text-align: right;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 40px;                /* nagy távolság a cím alatt */
+    margin-bottom: 40px;              
     letter-spacing: 1px;
 
 }
@@ -252,7 +237,7 @@ body {
 .probal{
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 40px;                /* nagy távolság a cím alatt */
+    margin-bottom: 40px;              
     letter-spacing: 1px;
 
 }
@@ -260,7 +245,7 @@ body {
 .info-column p {
     margin: 10px 0;
     font-size: 15px;
-    opacity: 0.75;                      /* halvány, mint a képen */
+    opacity: 0.75;                 
 }
 
 .info-column a {
@@ -271,7 +256,7 @@ body {
 }
 
 .vonal{
-    border-bottom: 1px solid #888;         /* vékony felső vonal */
+    border-bottom: 1px solid #888;  
 }
 
 .phone {
@@ -294,20 +279,20 @@ body {
     }
 
     .special-grid {
-        grid-template-columns: 2fr 1fr; /* megtartjuk az eredeti arányokat */
+        grid-template-columns: 2fr 1fr; 
         gap: 25px;
     }
 
     .big-left {
-        height: 260px;   /* kisebb */
+        height: 260px;
     }
 
     .tall-right {
-        height: 380px;   /* kisebb */
+        height: 380px;  
     }
 
     .small {
-        height: 150px;   /* kisebb */
+        height: 150px;  
     }
 }
 
@@ -318,7 +303,7 @@ body {
         top: 70px;
         right: 0;
         width: 100%;
-        background: rgba(0,0,0,0.85); /* átlátszó fekete, ahogy a mintán */
+        background: rgba(0,0,0,0.85); 
         flex-direction: column;
         text-align: center;
         display: none;
@@ -352,24 +337,23 @@ body {
     }
 
     .tall-right {
-        grid-row: auto; /* ne lógjon át több soron */
+        grid-row: auto; 
     }
 }
 
 .footervonal{
-    width: 50vw;
-    border-top: 1px solid #888;  
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 50vw;
+    border-top: 1px solid #888;  
 }
 
 .footer {
     color: #888;
-    width: 98vw;
+    width: 94vw;
     text-align: center;
     background: #000;
-    padding: 45px 0;
+    padding: 45px;
     font-size: 14px;
     font-family: Arial, sans-serif;
 }

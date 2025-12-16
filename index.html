@@ -1,65 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="pizzeria.css">
+    <title>Pizzéria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <section id="kezdo"></section>
-            <div class="fejlec">
-                <header>
-                    <div class="logo">PIZZÉRIA</div>
-                
-                    <!-- Láthatatlan checkbox -->
-                    <input type="checkbox" id="kapcsolo">
-                
-                    <!-- Hamburger ikon -->
-                    <label for="kapcsolo" class="hamburger">☰</label>
-                
-                    <!-- Menüelemek -->
-                    <nav class="menu">
-                        <a href="#kezdo">KEZDŐLAP</a>
-                        <a href="#menu">MENÜ</a>
-                        <a href="#rolunk">RÓLUNK</a>
-                        <a href="#kapcsolat">KAPCSOLAT</a>
-                    </nav>
-                </header>
-            </div>
-        
 
-        <div class="tortenet">
-            <div class="tort">
-                <h4>PIADINA PIZZÉRIA</h4>
-                <P>Történetünk</P>
-            </div>
-            <div class="tortszoveg">
-            <p>
-                „Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi.
-            </p>
-            </div>
-        </div>
-        <section id="menu"></section>
-        <div class="menu">
-            <div class="menucim">
-                <h4>Menu</h4>
-            </div>
-            <div class="menuszoveg">
-                <p>
-                    Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque
-                </p>
-            </div>
-        </div>
+<!-- HEADER -->
+<header class="header">
+    <section id="kezdo"></section>
+
+    <div class="logo">PIZZÉRIA</div>
+
+    <!-- HAMBURGER -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="nav">
+        <a href="#kezdo">KEZDŐLAP</a>
+        <span class="slash">/</span>
+        <a href="#menu">MENÜ</a>
+        <span class="slash">/</span>
+        <a href="#rolunk">RÓLUNK</a>
+        <span class="slash">/</span>
+        <a href="#kapcs">KAPCSOLAT</a>
+    </nav>
+    
+</header>
 
 
-        <div class="footer">
-            <footer>
-                <p>Piadina Pizzéria, 1013 Budapest, Clark Ádám tér 1., +36-67-632-456
-                    Az oldalt a Webnode működteti</p>
-            </footer>
-        </div>
+<!-- PIADINA -->
+<section class="piadina">
+
+    <div class="piadina-bal">
+        <h2 class="title">PIADINA PIZZÉRIA</h2>
+        <p class="subtitle">Történetünk</p>
     </div>
+
+    <div class="piadina-right">
+        <p class="text">
+            Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque
+            porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci
+            velit sed quia non numquam eius modi.
+        </p>
+
+        <p class="phone">FOGLALJ ASZTALT: +36-67-632-456</p>
+    </div>
+
+</section>
+
+<!-- MENÜ -->
+<section id="menu"></section>
+<section class="menu-section">
+    <h2 class="title">— MENÜ —</h2>
+    <p class="subtitle">Ajánlatunk</p>
+
+    <p class="text">
+        Itt kezdődhet a szöveged. Kattints ide, és kezdheted is az írást. Veritatis et quasi architecto
+        beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur
+        aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+        nesciunt.
+    </p>
+
+    <div class="menu-buttons">
+        <a class="btn" href="#kezdo">PIZZA</a>
+        <a class="btn" href="#menu">MENÜ</a>
+        <a class="btn" href="#">ITALOK</a>
+    </div>
+</section>
+
+<section class="specials">
+    <h2 class="title">— SPECIALITÁSAINK —</h2>
+    <p class="subtitle">Az ízek tökéletes összhangja</p>
+
+    <div class="special-grid">
+
+        <div class="elsopizza">
+            <img src="img/pizzakep.jpg" alt="">
+            <p class="img-title">Pizza</p>
+        </div>
+
+        <div class="vorosbors">
+            <img src="img/pizzakep2.jpg" alt="">
+            <p class="img-title">Vörösboros marhapecsenye</p>
+        </div>
+
+        <div class="vegyes">
+            <img src="img/pizzakep3.jpg" alt="">
+            <p class="img-title">Vegyes zöldségsaláta olívával</p>
+        </div>
+
+        <div class="pizza">
+            <img src="img/pizzakep4.jpg" alt="">
+            <p class="img-title">Pizza</p>
+        </div>
+
+        <div class="eloetetl">
+            <img src="img/pizzakep5.jpg" alt="">
+            <p class="img-title">Előétel</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- BOTTOM INFO -->
+<section id="kapcs"></section>
+<section class="info">
+    <div class="szeretettel">
+        <h3 class="szeretettel">SZERETETTEL VÁRUNK</h3>
+    </div>
+
+    <div class="info-column">
+        <h3 class="info-title">NYITVA</h3>
+        <p>Hétfő: <br> Zárva</p>
+        <div class="vonal"></div>
+        <p>Kedd: <br> 09:30 - 20:00</p>
+        <div class="vonal"></div>
+        <p>Szerda: <br> 09:30 - 20:00</p>
+        <div class="vonal"></div>
+        <p>Csütörtök: <br> 11:00 - 22:00</p>
+        <div class="vonal"></div>
+        <p>Péntek: <br> 11:00 - 22:00</p>
+        <div class="vonal"></div>
+        <p>Szo: <br> 11:00 - 22:00</p>
+        <div class="vonal"></div>
+        <p>Vas: <br> 11:00 - 20:00</p>
+    </div>
+
+    <div class="info-column">
+        <h3 class="probald">PRÓBÁLD KI FENSÉGES ÉTELEINKET</h3>
+        <p>Kattints ide, és kezdheted is az írást. Quis autem vel eum iure
+        reprehenderit qui in ea voluptate velit.</p>
+        <p><a href="#" class="link">Foglalj asztalt itt!</a></p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footervonal"></div>
+<footer class="footer">
+    Piadina Pizzéria, 1013 Budapest, Clark Ádám tér 1. • +36-67-632-456<br>
+    <br>
+    Az oldal a <a href="https://getfireshot.com/pdf_aHR0cHM6Ly93d3cud2Vibm9kZS5odS8/dXRtX3NvdXJjZT10ZXh0JnV0bV9tZWRpdW09Zm9vdGVyJnV0bV9jYW1wYWlnbj1mcmVlMSZ1dG1fY29udGVudD13bmQy">Webnode</a>  műhelyéből
+</footer>
+
 </body>
 </html>
