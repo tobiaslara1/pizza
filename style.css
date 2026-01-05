@@ -33,16 +33,11 @@ body {
 .slash {
     color: #ccc;
 }
-/* HAMBURGER  
-    .hero-img {
-    width: 100%;
-    display: block;
-} */
 
 .menu-toggle { display: none; }
 
 .piadina {
-    background: #222;
+    background: rgb(20, 20, 20);
     padding: 80px 12%;
     display: flex;
     justify-content: center;
@@ -51,12 +46,12 @@ body {
 }
 
 .piadina-bal {
-    width: 30%;     
+    width: 45%;     
     text-align: right;
 }
 
 .piadina-jobb {
-    width: 50%;       
+    width: 30%;       
     text-align: left;
 }
 
@@ -77,11 +72,11 @@ body {
     opacity: 0.9;
 }
 
-.piadina, 
 .menu-section {
-    background: #000;
+    background: #000000;
     padding: 50px 20%;
     text-align: center;
+
 }
 
 .cim { 
@@ -200,12 +195,11 @@ body {
 
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.15);
 }
 
 .info {
     width: 98vw;
-    background: #000;                  
+    background: #000000;                  
     padding: 70px 0;
     display: flex;
     justify-content: center;
@@ -264,14 +258,33 @@ body {
     font-weight: bold;
 }
 
+.footervonal{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    border-top: 1px solid #888;  
+}
+
+.footer {
+    color: #888;
+    width: 94vw;
+    text-align: center;
+    background: #000;
+    padding: 45px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    color: #888;
+}
 
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
 
-    .piadina, 
-    .menu-section {
-        padding: 50px 10%;
+    .header {
+        width: 92vw;
     }
 
     .specials {
@@ -339,25 +352,4 @@ body {
     .tall-right {
         grid-row: auto; 
     }
-}
-
-.footervonal{
-    display: flex;
-    justify-content: center;
-    width: 50vw;
-    border-top: 1px solid #888;  
-}
-
-.footer {
-    color: #888;
-    width: 94vw;
-    text-align: center;
-    background: #000;
-    padding: 45px;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-}
-
-.footer a {
-    color: #888;
 }
