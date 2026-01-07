@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #111;
+    background: #222222;
     color: #fff;
     font-family: Arial;
 }
@@ -38,7 +38,7 @@ body {
 .menu-toggle { display: none; }
 
 .piadina {
-    background: rgb(20, 20, 20);
+
     padding: 80px 12%;
     display: flex;
     justify-content: center;
@@ -75,36 +75,33 @@ body {
 
 .menu-section {
     background: #000000;
-    padding: 50px 20%;
+    padding: 80px 30%;
     text-align: center;
 
 }
+
 
 .cim { 
     font-size: 26px; 
 }
 
 .cimalatt { 
-    opacity: .7; margin-bottom: 20px; 
-}
-
-.piadinaszoveg { 
-    line-height: 1.7; 
-}
-
-.telefon { 
-    font-weight: bold; margin-top: 20px; 
+    font-size: 20px; 
+    margin-bottom: 20px; 
 }
 
 .menu-buttons {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+}
+.menuszoveg{
+    font-size: 19px;
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 20px 65px;
     border: 1px solid #fff;
     text-decoration: none;
     color: #fff;
@@ -129,7 +126,6 @@ body {
     margin-bottom: 50px;
 }
 
-
 .special-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -139,7 +135,7 @@ body {
         220px
         40px
         220px
-        1px;
+        3px;
 
     gap: 50px;
 }
@@ -199,7 +195,7 @@ body {
 }
 
 .info {
-    width: 98vw;
+    width: 99vw;
     background: #000000;                  
     padding: 70px 0;
     display: flex;
@@ -210,23 +206,12 @@ body {
 
 .info-column {
     width: 230px;                    
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-.szeretettel{
-    width: 150px;                  
-    color: #ffffff;
-    font-family: Arial, sans-serif;
 }
 
 .szeretettel {
+    width: 150px; 
     text-align: right;
     font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 40px;              
-    letter-spacing: 1px;
-
 }
 
 .probal{
@@ -239,8 +224,7 @@ body {
 
 .info-column p {
     margin: 10px 0;
-    font-size: 15px;
-    opacity: 0.75;                 
+    font-size: 15px;               
 }
 
 .info-column a {
@@ -254,8 +238,6 @@ body {
     border-bottom: 1px solid #888;  
 }
 
-
-
 .footervonal{
     display: flex;
     justify-content: center;
@@ -268,7 +250,7 @@ body {
     width: 94vw;
     text-align: center;
     background: #000;
-    padding: 45px;
+    padding:     40px;
     font-size: 14px;
     font-family: Arial, sans-serif;
 }
@@ -279,7 +261,7 @@ body {
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     /* HEADER / HERO */
     .header {
@@ -382,6 +364,13 @@ body {
     .special-grid {
         grid-template-columns: 1fr;
         gap: 25px;
+
+        grid-template-rows:
+        20vh
+        20vh
+        20vh
+        20vh
+        20vh;
     }
 
     .elsopizza {
@@ -396,26 +385,16 @@ body {
     
     .vegyes {
         grid-column: 1 / 1;
-        grid-row: 4 / 4;
+        grid-row: 3 / 3;
     }
     
     .pizza {
         grid-column: 1 / 1;
-        grid-row: 5 / 5;
+        grid-row: 4 / 4;
     }
     
     .eloetetl {
         grid-column: 1 / 1;
-        grid-row: 6 / 6;
-    }
-
-    .big-left,
-    .tall-right,
-    .small {
-        height: 10vh;
-    }
-
-    .tall-right {
-        grid-row: auto; 
+        grid-row: 5 / 5;
     }
 }
