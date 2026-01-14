@@ -246,7 +246,7 @@ body {
 
     /* HEADER / HERO */
     .header {
-        width: 88vw;
+        width: 90vw;
         padding: 20px 40px;
         display: flex;
         justify-content: space-between;
@@ -261,9 +261,8 @@ body {
         display: flex;
         position: absolute;
         top: 70px;
-        right: 0;
-        width: 93vw;
-        background: rgba(0,0,0,0.85); 
+        right: 2%;
+        width: 10vw;
         flex-direction: column;
         align-items: right ;
         text-align: center;
@@ -272,8 +271,8 @@ body {
 
     /* PIADINA SZEKCIÓ */
     .piadina {
-        padding: 60px 8%;
-        gap: 30px;
+        padding: 20px 5%;
+        text-align: center;
     }
 
     .piadina-bal {
@@ -284,6 +283,12 @@ body {
     .piadina-jobb {
         width: 45%;
         text-align: left;
+    }
+
+    .menu-section {
+        background: #000000;
+        padding: 30px 10%;
+        text-align: center;
     }
 
     .special-grid {
@@ -337,7 +342,7 @@ body {
 
     .footer
     {
-        width: 88vw;
+        width: 90vw;
     }
 
     .footervonal{
@@ -351,7 +356,7 @@ body {
 
 
     .header {
-        width: 82vw;
+        width: 81vw;
         padding: 20px 40px;
         display: flex;
         justify-content: space-between;
@@ -363,14 +368,14 @@ body {
     }
 
     .nav {
+        display: flex;
         position: absolute;
         top: 70px;
-        right: 0;
-        width: 93   vw;
-        background: rgba(0,0,0,0.85); 
+        right: 4%;
+        width: 10vw;
         flex-direction: column;
+        align-items: right ;
         text-align: center;
-        display: none;
         padding: 20px;
     }
 
@@ -387,26 +392,35 @@ body {
     }
 
     .piadina {
+        padding: 10px 0;
+        display: flex;
         flex-direction: column;
+    }
+    
+    .piadina-bal {
+        width: 45%;    
+        justify-content: center;
+    }
+    
+    .piadina-jobb {
+        width: 40%;  
+        justify-content: right;
+        align-items: center;     
         text-align: center;
     }
 
-    .piadina-bal,
-    .piadina-jobb {
-        width: 100%;
-        text-align: center;
-    }
+
 
     .special-grid {
         grid-template-columns: 1fr;
         gap: 25px;
 
         grid-template-rows:
-        20vh
-        20vh
-        20vh
-        20vh
-        20vh;
+        30vh
+        70vh
+        30vh
+        30vh
+        30vh;
     }
 
     .elsopizza {
@@ -437,7 +451,6 @@ body {
     .info {
         width: 97vw;
         background: #000000;                  
-        padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;                    
@@ -445,7 +458,7 @@ body {
 
     .footer
     {
-        width: 82vw;
+        width: 81vw;
     }
 
     .footervonal{
